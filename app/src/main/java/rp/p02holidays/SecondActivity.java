@@ -23,7 +23,7 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Intent intentReceived = getIntent();
-        int type = intentReceived.getIntExtra("type",9);
+        int type = intentReceived.getIntExtra("type", 0);
         TextView textView = findViewById(R.id.textView);
         if (type == 0){
             textView.setText("Secular");
